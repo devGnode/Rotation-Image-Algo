@@ -41,3 +41,15 @@ FIN
 
   <img src="https://github.com/devGnode/Rotation-Image-Algo/blob/master/imgRot1.png">
 
+  
+      si x >= 0 ET x < imgA.X ET y >= 0 ET y < imgA.y alors :
+         
+         monitor.putPixel( 
+            arrondir( i%nX ), // new X
+            arrondir( i/nX ), // new y
+            imgeA[ ( y * imageA.x ) + y ] 
+         )
+         
+      sinon
+          rien 
+     

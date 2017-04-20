@@ -80,11 +80,9 @@ puis calculons la dimension de la nouvelle image  par rapport à l'angle souhait
 			hprop.x * Math.abs( rsin ) + hprop.y * Math.abs( rcos ) 
 			),
 		len = nX*nY;
-		
-		//pksl.val(nY+" // "+nX+" addr "+(( parseInt( i%nX ) + offsetX ) - ( nX/2 ))+"\r\n",1);
+	
 		try{
 			// Browse new buffer	
-			var img= new Array( len ).fill( 0 );
 			for(; i < len; i++,x++ ){
 				
 				x = Math.floor(  
@@ -101,11 +99,7 @@ puis calculons la dimension de la nouvelle image  par rapport à l'angle souhait
 					parseInt( ( parseInt( i%nX ) + offsetX ) - ( nX/2 ) ), // use round or parsInt avoid float addr
 					parseInt( ( parseInt( i/nX ) + offsetY ) - ( nY/2 ) ), // use round or parsInt avoid float addr
 					hprop.__code[ ( y * hprop.x ) + x ]
-				) :gui.setPixel(
-					parseInt( ( parseInt( i%nX ) + offsetX ) - ( nX/2 ) ),
-					parseInt( ( parseInt( i/nX ) + offsetY ) - ( nY/2 ) ),
-					0xFFAAFF55
-					);
+				) : void 0;
 			}
 		gui.refresh( );
 		offsetX=offsetY=i=x=y=nX=nY=rcos=rsin=len=null;

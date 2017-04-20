@@ -21,10 +21,11 @@ puis calculons la dimension de la nouvelle image  par rapport à l'angle souhait
   new buffer [ nX * nY ]
   
 ### Parcour le buffer de la nouvelle image 
- 
-BOUCLE TANT QUE i < ( nX * nY ) alors :
 
-  
+
+ 
+    BOUCLE TANT QUE i < ( nX * nY ) alors :  
+    
     // ( point central X de imgA ) + ( new point x ) * rcos - ( new point y ) - ( point central new Imge ) * rsin
     x = arrondir( (imgA.x/2)+( arrondir( i%nX ) - nX/2 ) * rcos - ( arrondir( i/4 ) - nY/2 ) * rsin
     // ( point central Y de imgA ) + ( new point x ) * rsin - ( new point y ) - ( point central new Imge ) * rcos
@@ -34,10 +35,9 @@ BOUCLE TANT QUE i < ( nX * nY ) alors :
          put yellow
     sinon
           put grey
-  
-  
-
-FIN
+     FINs Si
+     
+    BOUCLEFIN
 
   <img src="https://github.com/devGnode/Rotation-Image-Algo/blob/master/imgRot1.png">
 

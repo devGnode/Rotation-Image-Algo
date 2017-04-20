@@ -65,8 +65,8 @@ puis calculons la dimension de la nouvelle image  par rapport à l'angle souhait
 	//	x,y -> point of destination
 	// @return bool
 	var rotate = function( hprop, x, y ){
-		var offsetX = x*1, // 1dot offset
-		offsetY = y*1, // 1dot offset
+		var offsetX = x*1, // SPRITE 1 PIXEL offset
+		offsetY = y*1, //  sprite 1 pIXEL offset
 		i =x=y=0,
 			
 		// rcos radiant cosinus

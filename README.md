@@ -3,7 +3,7 @@ Procédure de ratotation d'une image en son centre
 
 [TEST](https://devgnode.github.io/rotate/index.html)
 
-une imgeA width 64 , height 32 avec un angle de 90° 
+une imgeA avec une taille width x , height y avec un angle de O° 
 
   // calcul cosinus et sinus en radiant
   
@@ -28,6 +28,7 @@ puis calculons la dimension de la nouvelle image  par rapport à l'angle souhait
     
     // ( point central X de imgA ) + ( new point x ) * rcos - ( new point y ) - ( point central new Imge ) * rsin
     x = arrondir( (imgA.x/2)+( arrondir( i%nX ) - nX/2 ) * rcos - ( arrondir( i/4 ) - nY/2 ) * rsin
+    
     // ( point central Y de imgA ) + ( new point x ) * rsin - ( new point y ) - ( point central new Imge ) * rcos
     y = arrondir( (imgA.y/2)+( arrondir( i%nX ) - nX/2 ) * rsin - ( arrondir( i/4 ) - nY/2 ) * rcos
     

@@ -32,8 +32,10 @@ puis calculons la dimension de la nouvelle image  par rapport à l'angle souhait
     y = arrondir( (imgA.y/2)+( arrondir( i%nX ) - nX/2 ) * rsin - ( arrondir( i/4 ) - nY/2 ) * rcos
     
     si x >= 0 ET x < imgA.X ET y >= 0 ET y < imgA.y alors :
-         put yellow
+    	OK
+         put yellow 
     sinon
+    	OVERFLOW / DEPASSEMENT 
           put grey
      FINs Si
      

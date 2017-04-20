@@ -20,7 +20,7 @@ puis calculons la dimension de la nouvelle image  par rapport à l'angle souhait
   
   new buffer [ nX * nY ]
   
-Parcour le buffer de la nouvelle image 
+### Parcour le buffer de la nouvelle image 
  
 BOUCLE TANT QUE i < ( nX * nY ) alors :
 

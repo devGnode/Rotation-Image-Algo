@@ -53,4 +53,5 @@ FIN
       sinon
           rien 
    
-    <img src="https://github.com/devGnode/Rotation-Image-Algo/blob/master/imgRot2.png">
+  
+  <img src="https://github.com/devGnode/Rotation-Image-Algo/blob/master/imgRot2.png">

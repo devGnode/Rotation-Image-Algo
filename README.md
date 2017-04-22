@@ -1,11 +1,11 @@
 # Rotation-Image-Algo
 Procédure de ratotation d'une image en son centre
 
-[TEST](https://devgnode.github.io/rotate/index.html)
-
-[ OTHER ](https://devgnode.github.io/rotate2/index.html)
-
 [ Github JSgraphicalUSerIterface ]( https://github.com/devGnode/JSgraphicalUserInterface )
+
+[ Rotation test ](https://devgnode.github.io/rotate/index.html)
+
+[ other ](https://devgnode.github.io/rotate2/index.html)
 
 une imgeA avec une taille width x , height y avec un angle de O° 
 
